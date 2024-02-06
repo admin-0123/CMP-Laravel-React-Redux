@@ -53,9 +53,10 @@ class DiningService
         if($open_now !== "") {
             $url .= "&open_now=" . $open_now;
         }
+        $bearToken = "";
         $requestContent = [
             'headers' => [
-                'Authorization'=> "Bearer EXCKgny_5NI0-DuoD-vpEGcsowVY15hUCH60XlgrzSQaePnXN-ghbw0Cv8spDYmmdqcrFEDpKXKVU6oZSb6mxPWtDZqZbBrTD-hBhhTbKz0JFM-jM2vGwXsLi43WW3Yx"
+                'Authorization'=> "Bearer " . $bearToken
             ]
         ];
 
